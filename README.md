@@ -15,11 +15,11 @@ Conway’s Crank) for each of the 64 cells on the board:
 * If C contains a piece and the piece is surrounded by 4, 5, 6, 7 or 8 pieces, then the piece dies of overcrowding and is taken away.
 * (If C contains a piece and the piece is surrounded by 2 or 3 pieces, then it is happy and survives.)
 * If C is empty and C is surrounded by
-- 2 blue pieces and 1 red piece, or
-- 3 blue pieces, then a blue life is born and C is filled with a blue piece.
+    - 2 blue pieces and 1 red piece, or
+    - 3 blue pieces, then a blue life is born and C is filled with a blue piece.
 * If C is empty and C is surrounded by
-- 2 red pieces and 1 blue piece, or
-- 3 red pieces, then a red life is born and C is filled with a red piece.
+    - 2 red pieces and 1 blue piece, or
+    - 3 red pieces, then a red life is born and C is filled with a red piece.
 
 #### Termination ####
 The game terminates as follows:
