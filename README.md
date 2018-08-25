@@ -27,3 +27,17 @@ The game terminates as follows:
 * If, when it is his/her turn, a player cannot move anywhere, then the game is declared a stalemate and is drawn.
 * If one player has no pieces left on the board, then that player loses and the other player wins.
 * If the game lasts for 250 moves without a winner, then it is declared an exhausted draw.
+
+## The Strategies
+
+#### Bloodlust ####
+This strategy chooses the next move for a player to be the one which (after Conway’s crank) produces the board state with the fewest number of opponent’s pieces on the board (ignoring the player’s own pieces).
+
+#### Self Preservation ####
+This strategy chooses the next move for a player to be the one which (after Conway’s crank) produces the board state with the largest number of that player’s pieces on the board (ignoring the opponent’s pieces).
+
+#### Land Grab ####
+This strategy chooses the next move for a player to be the one which (after Conway’s crank) produces the board state which maximises this function: Number of Player’s pieces – Number of Opponent’s pieces.
+
+#### Minimax ####
+This strategy looks two-ply ahead using the heuristic measure described in the Land Grab strategy. It should follow the minimax principle and take into account the opponent’s move after the one being chosen for the current player.
